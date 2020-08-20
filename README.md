@@ -6,8 +6,7 @@
 Simple 'snake game' created by SwiftUI. 
 
 ### Demo
-![snake-game-demo-gif](hhttps://github.com/ivfomenko/SnakeGame/master/demo.gif)
-
+![snake-game-demo-gif](demo.gif)
 
 #### Technology
 - SwiftUI
