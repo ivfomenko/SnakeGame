@@ -13,6 +13,7 @@
 		84BF8B1424EEEC73004F5C70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84BF8B1324EEEC73004F5C70 /* Assets.xcassets */; };
 		84BF8B1724EEEC73004F5C70 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84BF8B1624EEEC73004F5C70 /* Preview Assets.xcassets */; };
 		84BF8B1A24EEEC73004F5C70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84BF8B1824EEEC73004F5C70 /* LaunchScreen.storyboard */; };
+		84BF8B2624EEF3B2004F5C70 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BF8B2524EEF3B2004F5C70 /* Direction.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		84BF8B1624EEEC73004F5C70 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		84BF8B1924EEEC73004F5C70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84BF8B1B24EEEC73004F5C70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84BF8B2524EEF3B2004F5C70 /* Direction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +58,11 @@
 		84BF8B0C24EEEC6E004F5C70 /* SnakeGame */ = {
 			isa = PBXGroup;
 			children = (
-				84BF8B0D24EEEC6E004F5C70 /* AppDelegate.swift */,
-				84BF8B0F24EEEC6E004F5C70 /* SceneDelegate.swift */,
-				84BF8B1124EEEC6E004F5C70 /* ContentView.swift */,
+				84BF8B2324EEF3A0004F5C70 /* Models */,
+				84BF8B2224EEF397004F5C70 /* Views */,
+				84BF8B2124EEF380004F5C70 /* Support Files */,
 				84BF8B1324EEEC73004F5C70 /* Assets.xcassets */,
 				84BF8B1824EEEC73004F5C70 /* LaunchScreen.storyboard */,
-				84BF8B1B24EEEC73004F5C70 /* Info.plist */,
 				84BF8B1524EEEC73004F5C70 /* Preview Content */,
 			);
 			path = SnakeGame;
@@ -73,6 +74,32 @@
 				84BF8B1624EEEC73004F5C70 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		84BF8B2124EEF380004F5C70 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				84BF8B0D24EEEC6E004F5C70 /* AppDelegate.swift */,
+				84BF8B0F24EEEC6E004F5C70 /* SceneDelegate.swift */,
+				84BF8B1B24EEEC73004F5C70 /* Info.plist */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		84BF8B2224EEF397004F5C70 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				84BF8B1124EEEC6E004F5C70 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		84BF8B2324EEF3A0004F5C70 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				84BF8B2524EEF3B2004F5C70 /* Direction.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +176,7 @@
 				84BF8B0E24EEEC6E004F5C70 /* AppDelegate.swift in Sources */,
 				84BF8B1024EEEC6E004F5C70 /* SceneDelegate.swift in Sources */,
 				84BF8B1224EEEC6E004F5C70 /* ContentView.swift in Sources */,
+				84BF8B2624EEF3B2004F5C70 /* Direction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +316,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SnakeGame/Preview Content\"";
 				DEVELOPMENT_TEAM = N4K99YM597;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = SnakeGame/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SnakeGame/Support Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,7 +336,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SnakeGame/Preview Content\"";
 				DEVELOPMENT_TEAM = N4K99YM597;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = SnakeGame/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SnakeGame/Support Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
